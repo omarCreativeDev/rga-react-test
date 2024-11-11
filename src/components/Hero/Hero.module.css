@@ -1,14 +1,54 @@
+.wrapper {
+  color: var(--white);
+}
+
 .mainHeading {
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 76px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 31px;
+  }
 }
 
 .badge {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  display: inline-grid;
+  border-radius: 24px;
+  border: solid 1px var(--white);
+  padding: 12px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .secondaryHeading {
+  font-size: 49px;
+  font-weight: 900;
+  margin-bottom: 28px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 35px;
+  }
 }
 
 .copy {
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 500px;
+  margin-bottom: 36px;
+  line-height: 24px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
-.cta {
+.mainHeading,
+.secondaryHeading {
+  max-width: 230px;
 }

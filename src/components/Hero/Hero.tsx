@@ -2,10 +2,10 @@ import { Button } from '../Button/Button.tsx';
 import Styles from './Hero.module.css';
 
 export const Hero = () => {
-  const { mainHeading, badge, secondaryHeading, copy } = Styles;
+  const { wrapper, mainHeading, badge, secondaryHeading, copy } = Styles;
 
   return (
-    <>
+    <div className={wrapper}>
       <h1 className={mainHeading}>MORE FROM RICO THE DOG</h1>
       <span className={badge}>RICO IS BACK!</span>
       <h2 className={secondaryHeading}>RICOBOT</h2>
@@ -14,6 +14,6 @@ export const Hero = () => {
         worlds. available now on PS5!
       </p>
       <Button label="LEARN MORE" url="#" />
-    </>
+    </div>
   );
 };

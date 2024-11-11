@@ -1,5 +1,6 @@
 .container {
-  padding: 26px 24px 26px 90px;
+  padding: 26px 24px 90px 26px;
+  background: var(--black);
 
   @media only screen and (min-width: 768px) {
     padding: 84px 80px 48px 80px;

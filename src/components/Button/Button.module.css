@@ -1,2 +1,21 @@
 .btn {
+  font-size: 14px;
+  font-weight: 900;
+  background: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  border: solid 1px transparent;
+  padding: 16px;
+  display: inline-grid;
+  border-radius: var(--border-radius);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--white);
+  }
 }
