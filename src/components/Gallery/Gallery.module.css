@@ -25,19 +25,22 @@
 
 .foregroundImg {
   position: absolute;
-  height: 400px;
+  height: 300px;
   z-index: 1;
-  top: -60px;
+  top: -70px;
   right: 5vw;
+
+  @media only screen and (min-width: 450px) {
+    height: 350px;
+  }
 
   @media only screen and (min-width: 600px) {
     height: 450px;
-    bottom: 40px;
   }
 
   @media only screen and (min-width: 1024px) {
     height: 810px;
-    bottom: 40px;
+    top: -90px;
     right: 150px;
     z-index: -1;
   }
