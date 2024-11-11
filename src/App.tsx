@@ -1,7 +1,14 @@
-import './App.css';
+import Styles from './App.module.css';
+import { Hero } from './components/Hero/Hero.tsx';
 
 function App() {
-  return <h1>RGA REACT TEST</h1>;
+  const { container } = Styles;
+
+  return (
+    <section className={container}>
+      <Hero />
+    </section>
+  );
 }
 
 export default App;
