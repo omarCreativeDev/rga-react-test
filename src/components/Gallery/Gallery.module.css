@@ -1,0 +1,95 @@
+.mainImg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: fill;
+  mask-image: linear-gradient(to left, var(--black) 40%, transparent 100%),
+    linear-gradient(to bottom, var(--black) 70%, transparent 100%);
+  mask-composite: intersect;
+
+  @media only screen and (min-width: 600px) {
+    mask-image: linear-gradient(to left, var(--black) 40%, transparent 100%),
+      linear-gradient(to bottom, var(--black) 30%, transparent 100%);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    mask-image: unset;
+    height: 100%;
+    max-height: unset;
+    z-index: -2;
+    object-fit: cover;
+  }
+}
+
+.foregroundImg {
+  position: absolute;
+  height: 400px;
+  z-index: 1;
+  top: -60px;
+  right: 5vw;
+
+  @media only screen and (min-width: 600px) {
+    height: 450px;
+    bottom: 40px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: 810px;
+    bottom: 40px;
+    right: 150px;
+    z-index: -1;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    right: 200px;
+  }
+}
+
+.gallery {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: end;
+  position: relative;
+  z-index: 1;
+
+  @media only screen and (min-width: 1024px) {
+    margin-top: 76px;
+    gap: 32px;
+  }
+}
+
+.item {
+  height: 90px;
+  width: 90px;
+  border: solid 5px transparent;
+  border-radius: 10px;
+
+  @media only screen and (min-width: 1024px) {
+    height: 100px;
+    width: 100px;
+  }
+
+  &:hover {
+    outline: solid 3px var(--white);
+    cursor: pointer;
+  }
+}
+
+.thumbnail {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.active {
+  outline: solid 3px var(--white);
+
+  @media only screen and (min-width: 1024px) {
+    height: 143px;
+    width: 143px;
+  }
+}
