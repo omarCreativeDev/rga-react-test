@@ -13,14 +13,14 @@ export const Gallery = () => {
     <>
       <img
         className={mainImg}
-        src={`src/assets/hero/slides/${activeThumbnailNumber}-background.png`}
+        src={`hero/slides/${activeThumbnailNumber}-background.png`}
         alt={`Rico Dog slide ${activeThumbnailNumber}`}
       />
 
       {activeThumbnailNumber === 1 ? (
         <img
           className={foregroundImg}
-          src={`src/assets/hero/slides/${activeThumbnailNumber}-foreground-cutout.png`}
+          src={`hero/slides/${activeThumbnailNumber}-foreground-cutout.png`}
           alt="Rico Dog"
         />
       ) : null}
@@ -32,7 +32,7 @@ export const Gallery = () => {
             onClick={() => clickHandler(thumbnailNumber)}
           >
             <img
-              src={`src/assets/hero/thumbnails/${thumbnailNumber}-thumbnail.png`}
+              src={`hero/thumbnails/${thumbnailNumber}-thumbnail.png`}
               alt={`Rico Dog pose ${thumbnailNumber}`}
               className={thumbnail}
             />
